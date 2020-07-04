@@ -4,10 +4,7 @@ from data import DICTIONARY, LETTER_SCORES
 def load_words():
     """Load dictionary into a list and return list"""
     with open(DICTIONARY, 'r') as f:
-        word_list = [w.replace('\n', '') for w in f.readlines()]
-
-    return word_list
-
+        return [w.replace('\n', '') for w in f.readlines()]
 
 dictionary = load_words()
 
